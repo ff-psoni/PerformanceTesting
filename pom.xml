@@ -2,11 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>io.gatling.demo</groupId>
-  <artifactId>gatling-self-trend</artifactId>
+  <artifactId>gatling-maven-plugin-demo-java</artifactId>
   <version>3.10.3</version>
 
   <properties>
+    <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <gatling.version>${project.version}</gatling.version>
     <gatling-maven-plugin.version>4.7.0</gatling-maven-plugin.version>
@@ -22,27 +24,19 @@
       <version>${gatling.version}</version>
       <scope>test</scope>
     </dependency>
-           <dependency>
-    <groupId>io.gatling</groupId>
-    <artifactId>gatling-recorder</artifactId>
-    <version>your-gatling-version</version>
-</dependency>
   </dependencies>
 
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
         <version>${maven-resources-plugin.version}</version>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>${maven-jar-plugin.version}</version>
       </plugin>
