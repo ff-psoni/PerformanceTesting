@@ -22,6 +22,11 @@
       <version>${gatling.version}</version>
       <scope>test</scope>
     </dependency>
+           <dependency>
+    <groupId>io.gatling</groupId>
+    <artifactId>gatling-recorder</artifactId>
+    <version>your-gatling-version</version>
+</dependency>
   </dependencies>
 
   <build>
